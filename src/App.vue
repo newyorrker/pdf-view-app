@@ -360,7 +360,7 @@ export default {
         zoomIn: "vuePdfAppZoomIn",
         zoomOut: "vuePdfAppZoomOut",
       },
-      pdf: "../res.pdf",
+      pdf: "./res.pdf",
     };
   },
 };
