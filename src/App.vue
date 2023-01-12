@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div>
+      <a href="./res.pdf" download>dowload</a>
+    </div>
     <div class="container">
       <div style="height: 90%">
         <div class="action-bar">
