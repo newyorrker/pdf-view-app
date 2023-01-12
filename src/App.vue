@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-      <a href="./res.pdf" download>dowload</a>
+      <a href="./res.pdf" target="_blank" download>dowload</a>
     </div>
     <div class="container">
       <div style="height: 90%">
