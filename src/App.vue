@@ -47,11 +47,11 @@
         </div>
         <vue-pdf-app
           :pdf="pdf"
-          :config="{ toolbar: false }"
+          :config="{ toolbar: false, sidebar: false }"
           :id-config="idConfig"
           style="position: relative"
         >
-          <template #viewer-header>
+          <!-- <template #viewer-header>
             <div class="viewer-header">
               <button
                 :id="idConfig.openFile"
@@ -89,7 +89,7 @@
                 <span class="mdi mdi-magnify"></span>
               </button>
             </div>
-          </template>
+          </template> -->
           <template #viewer-prepend="{ isSidebarHidden }">
             <div class="viewer-prepend">
               <button
@@ -130,16 +130,16 @@
               <!-- don't use v-if here -->
               <!-- otherwise got an error -->
               <span class="v-divider"></span>
-              <button
+              <!-- <button
                 :id="idConfig.sidebarToggle"
                 class="action-btn"
                 type="button"
                 title="Toggle sidebar"
               >
                 <span class="mdi mdi-page-layout-sidebar-left"></span>
-              </button>
+              </button> -->
               <span class="v-divider"></span>
-              <div v-show="!isSidebarHidden">
+              <!-- <div v-show="!isSidebarHidden">
                 <button
                   :id="idConfig.viewThumbnail"
                   class="action-btn"
@@ -166,7 +166,7 @@
                 >
                   <span class="mdi mdi-paperclip"></span>
                 </button>
-              </div>
+              </div> -->
             </div>
           </template>
           <template #viewer-footer="{ isFindbarHidden }">
@@ -341,25 +341,25 @@ export default {
         lastPage: "vuePdfAppLastPage",
         nextPage: "vuePdfAppNextPage",
         numPages: "vuePdfAppNumPages",
-        openFile: "vuePdfAppOpenFile",
+        // openFile: "vuePdfAppOpenFile",
         pageNumber: "vuePdfAppPageNumber",
         pageRotateCcw: "vuePdfAppPageRotateCcw",
         pageRotateCw: "vuePdfAppPageRotateCw",
-        presentationMode: "vuePdfAppPresentationMode",
+        // presentationMode: "vuePdfAppPresentationMode",
         previousPage: "vuePdfAppPreviousPage",
-        print: "vuePdfAppPrint",
+        // print: "vuePdfAppPrint",
         scrollHorizontal: "vuePdfAppScrollHorizontal",
         scrollVertical: "vuePdfAppScrollVertical",
         scrollWrapped: "vuePdfAppScrollWrapped",
-        sidebarToggle: "vuePdfAppSidebarToggle",
+        // sidebarToggle: "vuePdfAppSidebarToggle",
         spreadEven: "vuePdfAppSpreadEven",
         spreadNone: "vuePdfAppSpreadNone",
         spreadOdd: "vuePdfAppSpreadOdd",
-        toggleFindbar: "vuePdfAppToggleFindbar",
-        viewAttachments: "vuePdfAppViewAttachments",
+        // toggleFindbar: "vuePdfAppToggleFindbar",
+        // viewAttachments: "vuePdfAppViewAttachments",
         viewBookmark: "vuePdfAppViewBookmark",
-        viewOutline: "vuePdfAppViewOutline",
-        viewThumbnail: "vuePdfAppViewThumbnail",
+        // viewOutline: "vuePdfAppViewOutline",
+        // viewThumbnail: "vuePdfAppViewThumbnail",
         zoomIn: "vuePdfAppZoomIn",
         zoomOut: "vuePdfAppZoomOut",
       },
